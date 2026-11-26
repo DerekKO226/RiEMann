@@ -138,3 +138,8 @@ experiments/
 test/
 # pixi environments
 .pixi/
+# data generation logs and raw Isaac Sim episodes (regenerable from seeds)
+logs/
+data/*/*/raw/
+# keep evaluation scenes (the Flask rule `instance/` above would drop them)
+!data/*/*/eval/instance/
