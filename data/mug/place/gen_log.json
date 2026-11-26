@@ -1,0 +1,64 @@
+{
+ "task": "place",
+ "seed": 0,
+ "argv": [
+  "scripts/data_gen/gen_mug_sim.py",
+  "--task",
+  "place",
+  "--out",
+  "data/mug/place"
+ ],
+ "demo/training": {
+  "ik:target": 3,
+  "ik:track_target": 7,
+  "mug_collide:transport": 1,
+  "accepted": 10,
+  "attempts": 21,
+  "seconds": 20.2
+ },
+ "eval/training": {
+  "ik:target": 7,
+  "ik:track_target": 15,
+  "accepted": 20,
+  "attempts": 42,
+  "seconds": 38.3
+ },
+ "eval/newpose": {
+  "ik:target": 41,
+  "ik:track_target": 27,
+  "mug_collide:transport": 9,
+  "collide:transport": 6,
+  "jump:track_target": 4,
+  "collide:lift": 1,
+  "accepted": 20,
+  "attempts": 108,
+  "seconds": 46.3
+ },
+ "eval/instance": {
+  "ik:target": 19,
+  "ik:track_target": 22,
+  "jump:track_target": 1,
+  "accepted": 20,
+  "attempts": 62,
+  "seconds": 42.3
+ },
+ "eval/distracting": {
+  "ik:track_target": 24,
+  "ik:target": 9,
+  "mug_collide:transport": 1,
+  "accepted": 20,
+  "attempts": 54,
+  "seconds": 56.7
+ },
+ "eval/all": {
+  "mug_collide:transport": 11,
+  "ik:target": 29,
+  "ik:track_target": 26,
+  "jump:track_target": 6,
+  "collide:transport": 4,
+  "collide:lift": 1,
+  "accepted": 20,
+  "attempts": 97,
+  "seconds": 63.2
+ }
+}

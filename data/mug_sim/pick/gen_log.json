@@ -1,0 +1,50 @@
+{
+ "task": "pick",
+ "seed": 0,
+ "argv": [
+  "scripts/data_gen/gen_mug_sim.py",
+  "--task",
+  "pick",
+  "--out",
+  "data/mug_sim/pick"
+ ],
+ "demo/training": {
+  "ik:approach": 1,
+  "accepted": 10,
+  "attempts": 11,
+  "seconds": 16.1
+ },
+ "eval/training": {
+  "ik:approach": 1,
+  "accepted": 20,
+  "attempts": 21,
+  "seconds": 31.6
+ },
+ "eval/newpose": {
+  "jump:pregrasp": 1,
+  "ik:pregrasp": 2,
+  "ik:approach": 5,
+  "collide:pregrasp": 1,
+  "accepted": 20,
+  "attempts": 29,
+  "seconds": 30.8
+ },
+ "eval/instance": {
+  "accepted": 20,
+  "attempts": 20,
+  "seconds": 30.5
+ },
+ "eval/distracting": {
+  "accepted": 20,
+  "attempts": 20,
+  "seconds": 42.6
+ },
+ "eval/all": {
+  "collide:pregrasp": 1,
+  "ik:pregrasp": 3,
+  "ik:approach": 2,
+  "accepted": 20,
+  "attempts": 26,
+  "seconds": 43.8
+ }
+}

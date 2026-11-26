@@ -1,0 +1,53 @@
+{
+ "task": "place",
+ "object": "plane",
+ "seed": 0,
+ "argv": [
+  "scripts/data_gen/gen_plane_sim.py",
+  "--out",
+  "data/plane/place"
+ ],
+ "demo/training": {
+  "mug_collide:transport": 1,
+  "ik:track_target": 1,
+  "accepted": 10,
+  "attempts": 12,
+  "seconds": 32.0
+ },
+ "eval/training": {
+  "ik:track_target": 1,
+  "accepted": 20,
+  "attempts": 21,
+  "seconds": 65.3
+ },
+ "eval/newpose": {
+  "mug_collide:transport": 8,
+  "ik:track_target": 12,
+  "collide:transport": 4,
+  "jump:track_target": 1,
+  "accepted": 20,
+  "attempts": 45,
+  "seconds": 69.5
+ },
+ "eval/instance": {
+  "ik:track_target": 2,
+  "accepted": 20,
+  "attempts": 22,
+  "seconds": 65.4
+ },
+ "eval/distracting": {
+  "mug_collide:transport": 3,
+  "ik:track_target": 1,
+  "accepted": 20,
+  "attempts": 24,
+  "seconds": 81.9
+ },
+ "eval/all": {
+  "ik:track_target": 4,
+  "mug_collide:transport": 2,
+  "collide:transport": 1,
+  "accepted": 20,
+  "attempts": 27,
+  "seconds": 76.1
+ }
+}
