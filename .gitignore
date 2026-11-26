@@ -143,3 +143,5 @@ logs/
 data/*/*/raw/
 # keep evaluation scenes (the Flask rule `instance/` above would drop them)
 !data/*/*/eval/instance/
+# images under imgs/ are always tracked (overrides *.png, *.jpg, *.svg, ... above)
+!imgs/**
