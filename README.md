@@ -22,6 +22,20 @@ RiEMann is an SE(3)-equivariant robot manipulation algorithm that can generalize
 
 ## Installation
 
+### Using pixi (training, linux-64)
+
+The environment is locked in `pixi.toml` / `pixi.lock`. It contains Python 3.8, PyTorch 2.0.1 with CUDA 11.8, the PyG extensions and DGL 1.1.2, all installed from conda channels:
+
+```bash
+pixi install
+pixi run check                 # versions + visible GPUs
+pixi run train-seg mug pick    # step 1: SE3SegNet
+pixi run train-mani mug pick   # step 2: SE3ManiNet
+# or: pixi run train mug pick
+```
+
+### Manual installation (conda + pip)
+
 ### 1. Create virtual environment
 ```bash
 conda create -n equi python==3.8

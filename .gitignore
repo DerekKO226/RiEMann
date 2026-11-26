@@ -136,3 +136,5 @@ wandb/
 pcd/
 experiments/
 test/
+# pixi environments
+.pixi/
